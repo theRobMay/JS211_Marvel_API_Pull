@@ -1,0 +1,23 @@
+{
+  "name": "js211_marvel_api_pull",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theRobMay/JS211_Marvel_API_Pull.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/theRobMay/JS211_Marvel_API_Pull/issues"
+  },
+  "homepage": "https://github.com/theRobMay/JS211_Marvel_API_Pull#readme",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "md5": "^2.3.0"
+  },
+  "description": ""
+}
