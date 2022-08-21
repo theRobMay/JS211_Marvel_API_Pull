@@ -1,10 +1,4 @@
-require(`dotenv`).config();
-const md5 = require(`md5`);
-const private_key = '';
-const ts = new Date().getTime();
-const public_key = ``;
-const hash = md5(ts+private_key+public_key);
-console.log(hash)
+
 
 // const fetchAPI{
 // //    fetch from API
@@ -26,9 +20,17 @@ const getBreweries = () => {
     }
 
     fetch('https://brianiswu-open-brewery-db-v1.p.rapidapi.com/breweries', options)
-        .then(response => response.json())
-        .then(response => console.log(response))
+        .then(res => res.json())
+        .then(res => console.log(res))
         .catch(err => console.error(err));
+            // for (const brew of getBreweries().res) {
+            //     for(let i = 0; i < brew.length - i; i++) {
+            //         const listItem = document.createElement('li');
+            //         listItem.appendChild(
+            //             document.createElement('strong')
+            //         ).textContent = `Breweries Name: ${brew.name}`
+            //     }
+            // }
     console.log(getBreweries)
     // console.log(options)
 
@@ -49,3 +51,4 @@ const getBreweries = () => {
 
 
 };
+
